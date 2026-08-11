@@ -9,15 +9,17 @@ def isPrime(n):
 def reverseNum(n):
     ans = 0
     while n:
-        ans +=  n % 10
+        ans = ans * 10 + n % 10
         n //= 10
     return ans
 def checkMember(n):
+    total = 0
     while n:
         x = n % 10
         if x != 2 and x != 3 and x != 5 and x != 7:    return False
+        total += x
         n //= 10
-    return True
+    return isPrime(total)
 testcase = int(input())
 for _ in range(testcase):
     n = int(input())
