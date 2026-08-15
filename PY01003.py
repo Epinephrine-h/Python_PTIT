@@ -1,13 +1,14 @@
 def rounding(n):
-    rem = ans = 0
-    acc = 1
+    if n == 0:      return 0
+    carry = 0
+    lengthOfNumber = 0
     while n:
-        x = n % 10
-        acc *= 10
+        currentDigit = n % 10
+        lengthOfNumber += 1
         n //= 10
-        ans = x + 1 if rem >= 5 else x
-        rem = ans
-    return ans*acc//10
+        rounded = currentDigit + 1 if carry >= 5 else currentDigit
+        carry = rounded
+    return carry * (10 ** (lengthOfNumber - 1))
 testcase = int(input())
 for _ in range(testcase):
     n = int(input())
