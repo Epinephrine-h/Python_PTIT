@@ -1,0 +1,6 @@
+n = int(input())
+arr = list(map(int, input().split()))
+arr.sort()
+ans = max(arr[0]*arr[1], arr[-2]*arr[-1])
+ans = max(arr[0]*arr[1]*arr[2], arr[0]*arr[1]*arr[-1], arr[-3]*arr[-2]*arr[-1], ans)
+print(ans)
