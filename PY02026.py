@@ -1,0 +1,6 @@
+n, m = map(int, input().split())
+arrn = list(map(int, input().split()))
+arrm = list(map(int, input().split()))
+set1 = set(arrn)
+set2 = set(arrm)
+print("YES" if len(set1) == len(set2) == len(set1&set2) else "NO")
