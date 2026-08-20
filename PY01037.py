@@ -15,8 +15,8 @@ def main():
         n = int(line)
         pos = bisect.bisect_left(antiprimes, n)
         print(antiprimes[pos])
-if __name__ == '__main__':# Add this fucking line unless you wanna enjoy Time Limit Exceeded
-    main()
+if __name__ == '__main__':# Add this fucking line unless you wanna enjoy Time Limit Exceeded.
+    main()#Local variable lookup is faster than global, and AI is replacing me anyway.
 """use this to find antiprimes
 candidates = [(1,1)]
 LIMIT = 15_000_000
