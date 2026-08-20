@@ -15,7 +15,7 @@ def main():
         n = int(line)
         pos = bisect.bisect_left(antiprimes, n)
         print(antiprimes[pos])
-if __name__ == '__main__':
+if __name__ == '__main__':# Add this fucking line unless you wanna enjoy Time Limit Exceeded
     main()
 """use this to find antiprimes
 candidates = [(1,1)]
