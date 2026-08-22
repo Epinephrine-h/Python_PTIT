@@ -1,7 +1,7 @@
 testcase = int(input())
 for _ in range(testcase):
     n, m , u, v = map(int, input().split())
-    graph = [[] for _ in range(n + 1)]
+    graph = [[] for vertex in range(n + 1)]
     for i in range(m):
         x, y = map(int, input().split())
         graph[x].append(y)
