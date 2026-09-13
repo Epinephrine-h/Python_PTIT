@@ -16,4 +16,4 @@ for _ in range(n):
         cnt+=1
 if t: m[t] = cnt
 for topic, amount in m.items():
-    print(topic,": ", amount, sep = '')
+    print(f"{topic}: {amount}")
